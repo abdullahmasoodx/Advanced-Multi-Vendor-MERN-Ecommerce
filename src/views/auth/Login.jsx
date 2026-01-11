@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaFacebook, FaGoogle } from 'react-icons/fa';
 
-
 const Login = () => {
-
 
     const [state,setState] = useState({
         email:"",
