@@ -24,6 +24,7 @@ class authControllers {
           res.cookie(
             'accessToken', token,{
               expires:new Date(Date.now()+ 7*24*60*60*1000),
+              httpOnly: true
             }
           )
           return responseReturn(res, 200, { message: "Login successful", token });
